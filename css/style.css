@@ -1,19 +1,4 @@
 @font-face {
-    font-family: 'Lato-Light';
-    src: url('../fonts/Lato-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Lato-Regular';
-    src: url('../fonts/Lato-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Lato-Bold';
-    src: url('../fonts/Lato-Bold.ttf');
-}
-
-@font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?czo0fi');
     src: url('../fonts/icomoon.eot?czo0fi#iefix') format('embedded-opentype'),
@@ -48,7 +33,8 @@
 }
 
 body {
-    font-family: 'Lato-Regular';
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .container {
@@ -93,12 +79,19 @@ img {
 
 h1 {
     font-size: 36px;
-    font-family: 'Lato-Light';
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     color: #fff;
 }
 
+h1 strong {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
 .text {
-    font-family: 'Lato-Light';
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
     font-size: 15px;
     color: #fff;
     line-height: 1.5;
@@ -131,7 +124,8 @@ h1 {
     padding: 11px 6px;
     color: #fff;
     text-decoration: none;
-    font-family: 'Lato-Bold';
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -149,7 +143,7 @@ h1 {
     text-align: center;
     justify-content: center;
     color: #444;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .button-design {
@@ -169,7 +163,7 @@ h1 {
     display: inline-block;
     vertical-align: top;
     padding: 0 7px;
-    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 h2 {
@@ -409,12 +403,12 @@ address {
 }
 
 .location {
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 .location h5 {
     text-transform: uppercase;
-    margin: 0 0 16px;
+    margin: 0 -20px 16px;
     font-size: 14px;
 }
 
@@ -425,8 +419,15 @@ address {
 }
 
 .location ul li {
+    position: relative;
     padding-bottom: 16px;
     line-height: 1.4;
+}
+
+.location i {
+    position: absolute;
+    top: 3px;
+    left: -20px;
 }
 
 .location a {
@@ -495,10 +496,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper {
-        min-width: 768px;
-    }
-
     .holder-header {
         justify-content: space-between;
         flex-flow: wrap;
@@ -527,7 +524,8 @@ footer {
         padding: 13px 12px;
         text-decoration: none;
         color: #444;
-        font-family: 'Lato-Light';
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
         text-transform: uppercase;
         transition: color 0.7s, bgc;
     }
@@ -558,9 +556,6 @@ footer {
         font-size: 40px;
     }
 
-    .header-text {
-        margin-bottom: 30px;
-    }
 
     .button-design {
         margin-bottom: 35px;
@@ -617,10 +612,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-    .wrapper {
-        min-width: 1024px;
-    }
-
     .holder-build-brand {
         padding-top: 70px;
         padding-bottom: 80px;
@@ -651,10 +642,6 @@ footer {
         margin-bottom: 45px;
     }
 
-    .header-text {
-        margin-bottom: 27px;
-    }
-
     .button-design {
         margin-bottom: 45px;
     }
@@ -668,27 +655,3 @@ footer {
         padding: 35px 0;
     }
 }
-
-
-/* ------- #my-menu ------ */
-
-.mmenubar {
-    display: none;
-}
-
-.hamburger {
-    top: 34px;
-    right: 0;
-}
-
-.hamburger-box {
-    color: #444;
-}
-
-.hamburger-inner,
-.hamburger-inner:before,
-.hamburger-inner:after {
-    background-color: #444;
-}
-
-/* ------- #my-menu ---- */
