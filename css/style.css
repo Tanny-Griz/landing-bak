@@ -38,7 +38,6 @@ body {
 }
 
 .container {
-    max-width: 955px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -99,6 +98,7 @@ h1 strong {
 }
 
 .button {
+    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -116,8 +116,7 @@ h1 strong {
 }
 
 .btn {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     background-color: #1bbc9b;
     font-size: 13px;
     letter-spacing: 2px;
@@ -127,6 +126,7 @@ h1 strong {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    transition: background-color 0.5s;
 }
 
 .btn:hover {
@@ -147,20 +147,14 @@ h1 strong {
 }
 
 .button-design {
-    margin-bottom: 20px;
     text-align: center;
-}
+    margin: 0 -7px 20px;
 
-.button-design ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 0;
 }
 
 .button-design li {
     list-style: none;
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: top;
     padding: 0 7px;
     margin-bottom: 5px;
@@ -190,8 +184,8 @@ h2 {
     color: #fff;
     border-radius: 100%;
     overflow: hidden;
-    max-width: 180px;
-    max-height: 180px;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -216,9 +210,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
-    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
     background-color: #444;
     border-radius: 100%;
     padding: 10px;
@@ -495,7 +489,44 @@ footer {
     content: "\e90a";
 }
 
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .button-design ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .button-design li {
+        width: 50%;
+    }
+
+    .img-link {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hover-text i {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .item-employees {
+        width: 160px;
+    }
+        
+}
+
 @media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
     .holder-header {
         justify-content: space-between;
         flex-flow: wrap;
@@ -561,13 +592,22 @@ footer {
         margin-bottom: 35px;
     }
 
+    .button-design li {
+        width: 25%;
+    }
+
     h2 {
         font-size: 28px;
     }
 
     .circle {
-        padding: 0 30px 18px;
+        padding: 0 25px 18px;
         width: 33.33%;
+    }
+
+    .img-link {
+        width: 180px;
+        height: 180px;
     }
 
     .hover-text i {
@@ -575,6 +615,10 @@ footer {
         height: 44px;
         font-size: 20px;
         margin-bottom: 20px;
+    }
+
+    .item-employees {
+        width: 190px;
     }
 
     .hover-text p {
@@ -612,6 +656,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+    .container {
+        max-width: 955px;
+    }
+
     .holder-build-brand {
         padding-top: 70px;
         padding-bottom: 80px;
@@ -639,19 +687,31 @@ footer {
     }
 
     .button-design {
+        display: flex;
+        justify-content: center;
         margin-bottom: 45px;
     }
 
-    .button-design {
-        margin-bottom: 45px;
+    .button-design li {
+        width: auto;
+    }
+
+    .btn {
+        display: inline-block;
+        vertical-align: top;
     }
 
     .circle {
-        padding: 0 30px 18px;
         width: 25%;
+    }
+
+    .item-employees {
+        width: 220px;
     }
 
     .holder-license {
         padding: 35px 0;
     }
+
+
 }
