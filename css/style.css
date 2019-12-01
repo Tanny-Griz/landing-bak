@@ -55,12 +55,30 @@ img {
 
 .holder-header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 20px 0 20px;
 }
 
 .header-nav {
     display: none;
+}
+
+.burger {
+    position: fixed;
+    left: 10%;
+    top: 17px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #444;
+}
+
+.mm-navbar {
+    height: auto;
+}
+
+.mm-menu a:active, .mm-menu a:hover {
+    color: #16a086;
 }
 
 .build-brand {
@@ -531,6 +549,10 @@ footer {
         justify-content: space-between;
         flex-flow: wrap;
         padding: 23px 0 23px;
+    }
+
+    .burger {
+        display: none;
     }
 
     .header-nav {
