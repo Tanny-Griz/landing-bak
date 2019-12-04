@@ -416,6 +416,7 @@ address {
 
 .location {
     padding: 0 30px;
+    width: 50%;
 }
 
 .location h5 {
@@ -458,7 +459,6 @@ footer {
 }
 
 .license {
-    width: 60%;
     font-size: 14px;
     color: #fff;
 }
@@ -680,12 +680,6 @@ footer {
 
     .contact-form {
         width: 50%;
-        text-align: right;
-        padding: 0 10px 15px;
-    }
-
-    .license {
-        font-size: 14px;
     }
 
 }
