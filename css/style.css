@@ -80,6 +80,7 @@ img {
     color: #16a086;
 }
 
+
 .build-brand {
     display: flex;
     flex-direction: column;
@@ -460,6 +461,19 @@ footer {
     width: 60%;
     font-size: 14px;
     color: #fff;
+}
+
+.license ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.license li {
+    display: inline-block;
+}
+
+.license li + li::before {
+    content: "| ";
 }
 
 .up {
