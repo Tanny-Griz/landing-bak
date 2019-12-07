@@ -26,7 +26,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #444; }
 
 .container {
   max-width: 995px;
@@ -69,7 +70,6 @@ img {
         font-size: 14px;
         padding: 13px 12px;
         text-decoration: none;
-        color: #444;
         font-weight: 300;
         text-transform: uppercase;
         transition: color 0.7s; }
@@ -193,7 +193,6 @@ h1 {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  color: #444;
   margin-bottom: 40px; }
   .header-text h2 {
     font-size: 20px;
@@ -345,8 +344,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 15px;
-  color: #444; }
+  padding-top: 15px; }
 
 .item-employees {
   display: inline-block;
@@ -392,7 +390,7 @@ h1 {
     vertical-align: top;
     width: 45px;
     height: 48px;
-    background-color: #16a086cc;
+    background-color: #16a086;
     font-size: 28px;
     text-decoration: none; }
   .social i {
@@ -469,15 +467,13 @@ address {
     font-size: 14px; }
   .location ul {
     list-style: none;
-    margin: 0;
-    color: #444; }
+    margin: 0; }
   .location li {
     position: relative;
     padding-bottom: 16px;
     line-height: 1.4; }
   .location a {
-    text-decoration: none;
-    color: #444; }
+    text-decoration: none; }
   .location i {
     position: absolute;
     top: 3px;
