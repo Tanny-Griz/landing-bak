@@ -55,6 +55,7 @@ img {
 
 .holder-header {
     display: flex;
+    align-items: center;
     padding: 20px 0 20px;
 }
 
@@ -96,18 +97,15 @@ img {
 
 h1 {
     font-size: 36px;
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #fff;
 }
 
 h1 strong {
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
 
 .text {
-    font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 15px;
     color: #fff;
@@ -141,7 +139,6 @@ h1 strong {
     padding: 11px 6px;
     color: #fff;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     transition: background-color 0.5s;
@@ -167,12 +164,10 @@ h1 strong {
 .button-design {
     text-align: center;
     margin: 0 -7px 20px;
-
 }
 
 .button-design li {
     list-style: none;
-    /* display: inline-block; */
     vertical-align: top;
     padding: 0 7px;
     margin-bottom: 5px;
@@ -220,7 +215,7 @@ h2 {
     right: 0;
     bottom: 0;
     transition: opacity .3s,
-        visibility .3s;
+                visibility .3s;
     opacity: 0;
 }
 
@@ -570,7 +565,6 @@ footer {
 
     .header-nav {
         display: block;
-        padding-top: 15px;
     }
 
     .header-nav ul {
@@ -590,10 +584,9 @@ footer {
         padding: 13px 12px;
         text-decoration: none;
         color: #444;
-        font-family: 'Lato', sans-serif;
         font-weight: 300;
         text-transform: uppercase;
-        transition: color 0.7s, bgc;
+        transition: color 0.7s;
     }
 
     .header-nav li a:hover {
@@ -741,6 +734,4 @@ footer {
     .holder-license {
         padding: 35px 0;
     }
-
-
 }
