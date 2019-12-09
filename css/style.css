@@ -72,7 +72,8 @@ img {
         text-decoration: none;
         font-weight: 300;
         text-transform: uppercase;
-        transition: color 0.7s; }
+        transition: color 0.7s;
+        color: #444; }
         .header-nav a:hover {
           background-color: #1bbc9b;
           color: #fff; } }
@@ -473,7 +474,8 @@ address {
     padding-bottom: 16px;
     line-height: 1.4; }
   .location a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #444; }
   .location i {
     position: absolute;
     top: 3px;
