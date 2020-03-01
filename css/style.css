@@ -81,6 +81,7 @@ img {
 
 .burger {
   position: fixed;
+  z-index: 9999;
   right: 10%;
   top: 17px; }
   @media screen and (min-width: 768px) {
@@ -392,7 +393,7 @@ h1 {
     vertical-align: top;
     width: 45px;
     height: 48px;
-    background-color: #16a086;
+    background-color: rgba(22, 160, 134, 0.6);
     font-size: 28px;
     text-decoration: none; }
   .social i {
